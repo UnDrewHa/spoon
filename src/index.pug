@@ -1,0 +1,119 @@
+include blocks/mixins.pug
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Spoon
+    meta(name='description', content='Spoon')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  body
+    header.header
+        .header-logo: h1 Spoon Guide Russia
+        nav
+            .header__burger: span
+            ul.header-nav
+                li.header-nav__item: a(href='#') О проекте
+                li.header-nav__item: a(href='#') Мы рекомендуем
+                li.header-nav__item: a(href='#') Рестораны
+                li.header-nav__item: a(href='#') Бары
+                li.header-nav__item: a(href='#') Про вино
+                li.header-nav__item: a(href='#') Наши эксперты
+                li.header-nav__item: a(href='#') Гастрофестивали
+    main.page
+        .hero
+            .hero__img
+                a(href='#')
+                    img(src='http://via.placeholder.com/1440x450' alt='')
+            .hero__info
+                a(href='#').hero__tag Рестораны
+                a(href='#').hero__title Ужин Chopard в честь запуска коллекции Rihanna x Chopard
+        .page__wrapper
+            .page__row
+                .page-main
+                    +item('Про вино','Как выбрать хорошее вино: 5 простых правил', '_main')
+                    .items-list._double
+                        +item('Рестораны','Прием Cartier в музее-усадьбе «Архангельское»')
+                        +item('Рестораны','Прием Cartier в музее-усадьбе «Архангельское»')
+                    +item('Про вино','Как выбрать хорошее вино: 5 простых правил', '_main')
+                    .item-preview._border
+                        .item-preview__img
+                          a(href='#')
+                              img(src='http://via.placeholder.com/300x300' alt='')
+                        .item-preview__info
+                          a(href='#').item-preview__title Бреиова Гаяне
+                          .item-preview__subtitle Яркая, красивая, креативная Гаяне Бреиова, владелица ресторанов Gayane’s и Панаехали – одна из самых известных московских женщин-рестораторов.
+                          a(href='#').item-preview__tag Рестораторы
+                .page-sidebar
+                    .banner._border._sidebar-banner
+                        img(src='http://via.placeholder.com/280x580' alt='')
+                    .items-list._top3
+                        .items-list__title Top-3
+                        +item('Рестораны','Прием Cartier в музее-усадьбе «Архангельское»', '_top')
+                        +item('Рестораны','Прием Cartier в музее-усадьбе «Архангельское»', '_top')
+                        +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_top')
+                    ul.social-icons    
+                        li.social-icons__item._fb: a(href='#')
+                            svg
+                                use(xlink:href='i/icons.svg#fb')
+                        li.social-icons__item._vk: a(href='#')
+                            svg
+                                use(xlink:href='i/icons.svg#vk')
+                        li.social-icons__item._tw: a(href='#')
+                            svg
+                                use(xlink:href='i/icons.svg#tw')
+                        li.social-icons__item._in: a(href='#')
+                            svg
+                                use(xlink:href='i/icons.svg#in')
+                        li.social-icons__item._ok: a(href='#')
+                            svg
+                                use(xlink:href='i/icons.svg#ok')
+        a(href='#').page-parallax
+            .page-parallax__img(style='background-image: url("");')
+            .page-parallax__title Новые тенденции 2017–2018
+        .page__wrapper
+            +item('Про вино','Как выбрать хорошее вино: 5 простых правил', '_wide')
+            .banner._border
+                img(src='http://via.placeholder.com/940x180' alt='')
+            .items-list._list21
+                +item('Рестораны','Прием Cartier в музее-усадьбе «Архангельское»', '_main')
+                +item('Рестораны','Прием Cartier в музее-усадьбе «Архангельское»', '', 'Эксперт по органолептике вина. Ведущий преподаватель Лицея Луи Мартин Бре (г.Маноск, Франция). Учебный  руководитель двух Чемпионов Мира среди сомелье. ')
+            .items-list._triple
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')     
+                +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»')
+            //- +pagination()
+    footer.footer
+        a(href='/').footer-logo
+        ul.footer-nav
+            li.footer-nav__item: a(href='#') О проекте
+            li.footer-nav__item: a(href='#') Азбука
+            li.footer-nav__item: a(href='#') Контактная информация
+            li.footer-nav__item: a(href='#') Реклама на сайте
+            li.footer-nav__item: a(href='#') Для правообладателей
+        ul.social-icons    
+            li.social-icons__item._fb: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#fb')
+            li.social-icons__item._vk: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#vk')
+            li.social-icons__item._tw: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#tw')
+            li.social-icons__item._in: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#in')
+            li.social-icons__item._ok: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#ok')
+
+        .footer-rights © 2011–2017 Spoon Guide. Все права защищены. 18+        

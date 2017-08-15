@@ -1,0 +1,37 @@
+.page
+  &__wrapper
+    margin 0 auto
+
+    > * + *
+      margin 20px 0 0
+      @media (min-width: 768px)
+        margin 35px 0 0
+    @media (max-width: 767px)
+      padding 0 10px
+    @media (min-width: 768px)
+      max-width 768px
+      padding 0 20px
+    @media (min-width: 1020px)
+      max-width 1000px
+  &__row
+    @media (min-width: 1020px)
+      display flex
+  &-main
+    min-width 0
+
+    > * + *
+      margin 20px 0 0
+      @media (min-width: 768px)
+        margin 35px 0 0
+    
+  &-sidebar
+    margin 20px 0 0
+    > * + *
+      margin 20px 0 0
+      @media (min-width: 768px) and (max-width: 1019px)
+        margin 35px 0 0
+          
+    @media (min-width: 1020px)
+      flex 0 0 300px
+      margin 0 0 0 30px
+      width 300px

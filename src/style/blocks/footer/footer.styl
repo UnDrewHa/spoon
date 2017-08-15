@@ -1,0 +1,56 @@
+.footer
+  background $c-title
+  margin 20px 0 0
+  padding 30px 0 0
+  text-align center
+  @media (min-width: 768px)
+    margin 35px 0 0
+  > * + *
+    margin 30px 0 0
+  &-logo
+    background url('../i/footer_logo.png') 50% no-repeat
+    background-size contain
+    display block
+    height 41px
+    margin 0 auto
+    width 109px
+  &-nav
+    padding 0
+    @media (min-width: 768px)
+      display flex
+      justify-content center
+    &__item
+      display block
+      font 13px/1.2 $roboto-c
+      list-style-type none
+      margin 0
+      padding 0
+      text-transform uppercase
+      @media (min-width: 768px)
+        font-size 14px
+      a
+        color #fff
+        &:hover
+        &:active
+          color $c-accent  
+      & + .footer-nav__item
+        margin 15px 0 0
+        @media (min-width: 768px)
+          margin 0 0 0 20px
+  &-rights
+    background $c-title-dark
+    color rgba(255,255,255,.3)
+    font 12px/1.2 $roboto-c
+    padding 1.8em 0
+    @media (min-width: 768px)
+      font-size 13px 
+  .social-icons__item
+    border-color #fff
+    height 32px
+    width 32px
+    & + .social-icons__item
+      margin 0 0 0 15px
+    svg
+      fill #fff  
+      height 32px
+      width 32px    

@@ -1,0 +1,115 @@
+.item-preview
+  &__img
+    position relative
+    a
+      display block
+      height 100%
+  img
+    radius(10px)
+    display block
+    width 100%
+  &__info
+    padding 35px 30px 0 0
+    position relative
+  &__tag
+    position absolute
+    top 0
+    left 0
+    border-top 4px solid $c-accent
+    color $c-accent
+    font 12px/1 $roboto-c
+    padding 10px 0 0
+    text-transform uppercase
+  &__title
+    color $c-title
+    font 18px/1.2 $roboto-c
+    margin 0
+    @media (min-width: 768px)
+      font-size 20px
+  &__subtitle
+    color $c-text
+    font 13px/1.38 $roboto
+    margin 7px 0 0
+  &._top
+    text-align center
+    .item-preview__info
+      padding 35px 15px 0
+    .item-preview__title
+      @media (min-width: 768px)
+        font-size 26px
+      @media (min-width: 1020px)  
+        font-size 18px  
+    .item-preview__tag
+      left 50%
+      transform translateX(-50%)
+  &._main
+    .item-preview__title
+      @media (min-width: 768px)
+        font-size 26px
+  &._wide
+    @media (min-width: 768px)
+      position relative
+      .item-preview__info
+        position absolute
+        bottom 0
+        left 0
+        background #fff
+        border-radius 0 20px 0 0
+        width 630px 
+    @media (min-width: 1020px)
+      .item-preview__title
+        font-size 30px     
+  &._border
+    position relative
+    @media (max-width: 767px)
+      margin-left auto
+      margin-right auto
+      width 300px
+    @media (min-width: 768px)
+      background url('../i/dot_border.png') 0 0 repeat
+      background-size 5px
+      display flex
+      padding 50px
+      *
+        z-index 2
+      &::before
+        position absolute
+        top 30px
+        left 30px
+        right 30px
+        bottom 30px
+        background #fff
+        content ''
+        display block
+        z-index 1
+    .item-preview__img
+      @media (min-width: 768px)
+        radius(15px)
+        flex 0 0 244px
+        margin 0 30px 0 0
+    .item-preview__info
+      @media (min-width: 768px)
+        padding 45px 0 0
+    .item-preview__title
+      @media (min-width: 768px)
+        font-size 26px    
+    .item-preview__subtitle
+      @media (min-width: 768px)
+        font-size 14px
+    .item-preview__tag
+      @media (min-width: 768px)
+        border-bottom 4px solid $c-accent
+        border-top none
+        padding 7px 0 10px
+    img
+      @media (max-width: 767px)
+        max-width 200%
+        width 100%
+      @media (min-width: 768px)
+        width 300px  
+
+
+
+
+
+
