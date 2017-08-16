@@ -1,0 +1,144 @@
+include blocks/mixins.pug
+doctype html
+html.section-page
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Spoon
+    meta(name='description', content='Spoon')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  body
+    header.header._section
+        .header__wrapper
+            .header-logo: a Spoon Guide Russia
+            nav
+                .header__burger: span
+                ul.header-nav
+                    li.header-nav__item: a(href='#') О проекте
+                    li.header-nav__item: a(href='#') Мы рекомендуем
+                    li.header-nav__item: a(href='#') Рестораны
+                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item: a(href='#') Про вино
+                    li.header-nav__item: a(href='#') Наши эксперты
+                    li.header-nav__item: a(href='#') Гастрофестивали
+            a(href='#').header-promo
+                .header-promo_img
+                    img(src='http://via.placeholder.com/50x50' alt='')
+                .header-promo_title проект <br>А. Фомина       
+
+    main.page
+        h1.page-header Азбука SPOON GUIDE
+        ul.abc-filter
+            li.abc-filter__item._selected: a(href='#') Все
+            li.abc-filter__item: a(href='#') Сомелье
+            li.abc-filter__item: a(href='#') Шеф-повара
+            li.abc-filter__item: a(href='#') Рестораторы
+            li.abc-filter__item: a(href='#') Вино
+            li.abc-filter__item: a(href='#') Бары
+            li.abc-filter__item: a(href='#') Рестораны
+        form.abc-form
+            .abc-form__wrapper
+                .abc-form__field
+                    input(type='text' id='abc_input' name='abc_input' value='' placeholder='Найти').abc-form__input
+                    button(type='submit').abc-form__button
+                        svg
+                            use(xlink:href='i/icons.svg#search')
+                    </svg>
+                ul.abc-list._ru
+                  li: a(href='#') А
+                  li: a(href='#') Б
+                  li: a(href='#') В
+                  li: a(href='#') Г
+                  li: a(href='#') Д
+                  li: a(href='#') Е
+                  li._active: a(href='#') Ж
+                  li: a(href='#') З
+                  li: a(href='#') И
+                  li: a(href='#') К
+                  li: a(href='#') Л
+                  li: a(href='#') М
+                  li: a(href='#') Н
+                  li: a(href='#') О
+                  li: a(href='#') П
+                  li: a(href='#') Р
+                  li: a(href='#') С
+                  li: a(href='#') Т
+                  li: a(href='#') У
+                  li: a(href='#') Ф
+                  li: a(href='#') Х
+                  li: a(href='#') Ц
+                  li: a(href='#') Ч
+                  li: a(href='#') Ш
+                  li: a(href='#') Щ
+                  li: a(href='#') Э
+                  li: a(href='#') Ю
+                  li: a(href='#') Я
+                ul.abc-list._en
+                    li: a(href='#') a    
+                    li: a(href='#') b   
+                    li: a(href='#') c   
+                    li: a(href='#') d   
+                    li: a(href='#') e   
+                    li: a(href='#') f   
+                    li: a(href='#') g   
+                    li: a(href='#') h   
+                    li: a(href='#') i   
+                    li: a(href='#') j   
+                    li: a(href='#') k   
+                    li: a(href='#') l   
+                    li: a(href='#') m   
+                    li: a(href='#') n   
+                    li: a(href='#') o   
+                    li: a(href='#') p   
+                    li: a(href='#') q   
+                    li: a(href='#') r   
+                    li: a(href='#') s   
+                    li: a(href='#') t   
+                    li: a(href='#') u   
+                    li: a(href='#') v   
+                    li: a(href='#') w   
+                    li: a(href='#') x   
+                    li: a(href='#') y   
+                    li: a(href='#') z
+        .page__wrapper        
+            .items-list._triple
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+            +pagination()
+            .banner._border
+                img(src='http://via.placeholder.com/940x180' alt='')
+    footer.footer
+        a(href='/').footer-logo
+        ul.footer-nav
+            li.footer-nav__item: a(href='#') О проекте
+            li.footer-nav__item: a(href='#') Азбука
+            li.footer-nav__item: a(href='#') Контактная информация
+            li.footer-nav__item: a(href='#') Реклама на сайте
+            li.footer-nav__item: a(href='#') Для правообладателей
+        ul.social-icons    
+            li.social-icons__item._fb: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#fb')
+            li.social-icons__item._vk: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#vk')
+            li.social-icons__item._tw: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#tw')
+            li.social-icons__item._in: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#in')
+            li.social-icons__item._ok: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#ok')
+
+        .footer-rights © 2011–2017 Spoon Guide. Все права защищены. 18+        
