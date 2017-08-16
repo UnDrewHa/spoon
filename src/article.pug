@@ -1,0 +1,103 @@
+include blocks/mixins.pug
+doctype html
+html.section-page
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Spoon
+    meta(name='description', content='Spoon')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  body
+    header.header._section
+        .header__wrapper
+            .header-logo: a Spoon Guide Russia
+            nav
+                .header__burger: span
+                ul.header-nav
+                    li.header-nav__item: a(href='#') О проекте
+                    li.header-nav__item: a(href='#') Мы рекомендуем
+                    li.header-nav__item: a(href='#') Рестораны
+                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item: a(href='#') Про вино
+                    li.header-nav__item: a(href='#') Наши эксперты
+                    li.header-nav__item: a(href='#') Гастрофестивали
+            a(href='#').header-promo
+                .header-promo_img
+                    img(src='http://via.placeholder.com/50x50' alt='')
+                .header-promo_title проект <br>А. Фомина
+    main.page
+        article.article
+            header
+                .hero
+                    .hero__img
+                        a(href='#')
+                            img(src='http://via.placeholder.com/1440x450' alt='')
+                    .hero__info
+                        a(href='#').hero__tag Рестораны
+                        h1.hero__title Ужин Chopard в честь запуска коллекции Rihanna x Chopard
+            .page__wrapper            
+                .article__subtitle Иван Глушков съездил в горы за травами, попробовал морскую лисицу и восхитился туристическими сырниками.
+                .article-social
+                .wysiwyg
+                    p Раза два-три в неделю шеф-повар Андрей Колодяжный и сомелье Алексей Ульянов берут большой пластиковый контейнер, охотничий нож, пинцет и уезжают рано утром в горы. Зимой это были холмы и скалы у самого моря, весной пара петляет где-то над городом, а к лету откочует к подножью снежных пиков в Красной поляне. Выгружаются на нетронутой туристами поляне, ходят по ней и делятся друг с другом находками: «Смотри, сколько тут водяного кресса!» – «Рви, а я пока мха вон на тех камнях нарежу» – «О, а тут и лопух есть, замаринуем» – «Незабудки берем?». Сбором и использованием диких трав Колодяжный увлекся еще в родном Пятигорске. Потом поехал на стажировку в Испанию и узнал, что все современные повара пищат от диких кореньев и трав. Вернулся, рассказал на кухне «Барана», что он, оказывается, автономно от всего поварского мира изобрел моднейший тренд и привлек к своим опытам сомелье ресторана.
+                    p «Никуда отсюда не уеду, ни за какие деньги» – демонстрирует подлинный и совершенно искренний патриотизм Колодяжный. – «У меня здесь и рыба, и мясо, и я каждое утро могу поехать в лес, который вот он, рядом. Здесь же уникальный климат. Смотри, мы вот здесь с тобой на поляне стоим – и тут совсем по-другому все растет, чем вон там, в десяти метрах. Потому что солнце по-другому светит, место другое. И так тут везде. Ни в какой Москве я и близко такого не получу». Ульянов пускается в рассуждения о знакомых бабушках под Ростовом, которые летом начнут поставлять в ресторан отличные овощи, и поет дифирамбы обязательному минимуму сортов шпината на армянском рынке возле его дома, добавляя очков патриотической речи шефа.
+                    img(src='http://via.placeholder.com/960x500' alt='')
+                    ul
+                        li отсюда
+                        li который
+                        li солнце
+                        li близко
+                    ol
+                        li отсюда
+                        li который
+                        li солнце
+                        li близко
+                    blockquote Он, оказывается, автономно от всего поварского мира изобрел моднейший тренд
+                    p Потому что солнце по-другому светит, место другое. И так тут везде. Ни в какой Москве я и близко такого не получу». Ульянов пускается в рассуждения о знакомых бабушках под Ростовом, которые летом начнут поставлять в ресторан отличные овощи, и поет дифирамбы обязательному минимуму сортов шпината на армянском рынке возле его дома, добавляя очков патриотической речи шефа.
+                    .slider
+                    p «Никуда отсюда не уеду, ни за какие деньги» – демонстрирует подлинный и совершенно искренний патриотизм Колодяжный. – «У меня здесь и рыба, и мясо, и я каждое утро могу поехать в лес, который вот он, рядом. 
+                .article-social
+                footer.article-footer
+                    .article-footer__item._author
+                        | Автор
+                        a(href='#') Иван Глушков
+                    .article-footer__item._tags
+                        | Теги
+                        a(href='#') Топ 100 ресторанов
+                        a(href='#') Сочи
+                        a(href='#') Обзоры ретсоранов
+                .banner._border
+                    img(src='http://via.placeholder.com/940x180' alt='')
+                .items-list._triple._read-more
+                    p.items-list__title Читайте также
+                    +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_center')     
+                    +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_center')     
+                    +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_center')     
+    footer.footer
+        a(href='/').footer-logo
+        ul.footer-nav
+            li.footer-nav__item: a(href='#') О проекте
+            li.footer-nav__item: a(href='#') Азбука
+            li.footer-nav__item: a(href='#') Контактная информация
+            li.footer-nav__item: a(href='#') Реклама на сайте
+            li.footer-nav__item: a(href='#') Для правообладателей
+        ul.social-icons    
+            li.social-icons__item._fb: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#fb')
+            li.social-icons__item._vk: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#vk')
+            li.social-icons__item._tw: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#tw')
+            li.social-icons__item._in: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#in')
+            li.social-icons__item._ok: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#ok')
+
+        .footer-rights © 2011–2017 Spoon Guide. Все права защищены. 18+        
