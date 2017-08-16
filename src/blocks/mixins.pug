@@ -4,22 +4,22 @@ mixin item(tag, title, type, subtitle)
       a(href='#')
           img(src='http://via.placeholder.com/630x336' alt='')
     .item-preview__info
+      a(href='#').item-preview__tag= tag
       a(href='#').item-preview__title= title
       if subtitle
         .item-preview__subtitle= subtitle
-      a(href='#').item-preview__tag= tag
 
 
 mixin pagination()
   ul.pagination
-    li.pagination__item._prev: a(href='#')
+    li.pagination__item._prev._disabled: a(href='#') ← Предыдущая
     li.pagination__item: a(href='#') 1
     li.pagination__item: a(href='#') 2
     li.pagination__item: a(href='#') 3
-    li.pagination__item: a(href='#') 4
+    li.pagination__item._active: a(href='#') 4
     li.pagination__item: a(href='#') 5
     li.pagination__item: a(href='#') 6
     li.pagination__item: a(href='#') 7
     li.pagination__item: a(href='#') 8
     li.pagination__item: a(href='#') 9
-    li.pagination__item._next: a(href='#')
+    li.pagination__item._next: a(href='#') Следующая →
