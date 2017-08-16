@@ -1,0 +1,72 @@
+include blocks/mixins.pug
+doctype html
+html.section-page
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Spoon
+    meta(name='description', content='Spoon')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  body
+    header.header._section
+        .header__wrapper
+            .header-logo: a Spoon Guide Russia
+            nav
+                .header__burger: span
+                ul.header-nav
+                    li.header-nav__item: a(href='#') О проекте
+                    li.header-nav__item: a(href='#') Мы рекомендуем
+                    li.header-nav__item: a(href='#') Рестораны
+                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item: a(href='#') Про вино
+                    li.header-nav__item: a(href='#') Наши эксперты
+                    li.header-nav__item: a(href='#') Гастрофестивали
+            a(href='#').header-promo
+                .header-promo_img
+                    img(src='http://via.placeholder.com/50x50' alt='')
+                .header-promo_title проект <br>А. Фомина       
+
+    main.page
+        .page__wrapper
+            h1.page-header Наши эксперты
+            .items-list._triple
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+                +expert('Андрей Фомин')
+            +pagination()
+            .banner._border
+                img(src='http://via.placeholder.com/940x180' alt='')
+    footer.footer
+        a(href='/').footer-logo
+        ul.footer-nav
+            li.footer-nav__item: a(href='#') О проекте
+            li.footer-nav__item: a(href='#') Азбука
+            li.footer-nav__item: a(href='#') Контактная информация
+            li.footer-nav__item: a(href='#') Реклама на сайте
+            li.footer-nav__item: a(href='#') Для правообладателей
+        ul.social-icons    
+            li.social-icons__item._fb: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#fb')
+            li.social-icons__item._vk: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#vk')
+            li.social-icons__item._tw: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#tw')
+            li.social-icons__item._in: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#in')
+            li.social-icons__item._ok: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#ok')
+
+        .footer-rights © 2011–2017 Spoon Guide. Все права защищены. 18+        

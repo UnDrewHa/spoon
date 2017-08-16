@@ -43,7 +43,10 @@
         font-size 26px
   &._center
     @media (min-width: 768px)
-      text-align center      
+      text-align center
+    .item-preview__info
+      @media (min-width: 768px)
+        padding 0 15px    
   &._wide
     @media (min-width: 768px)
       position relative
@@ -104,6 +107,23 @@
         width 100%
       @media (min-width: 768px)
         width 300px  
+  &._expert
+    text-align center
+    .item-preview__title
+      margin 0
+    .item-preview__info
+      padding 10px 15px 0
+      position relative
+      &::before
+        position absolute
+        top 0
+        left 50%
+        background $c-accent
+        content ''
+        display block    
+        height 4px
+        transform translateX(-50%)
+        width 67px
 
 
 
