@@ -46,7 +46,18 @@
       text-align center
     .item-preview__info
       @media (min-width: 768px)
-        padding 0 15px    
+        padding 0 15px
+  &._frame
+    img
+      border 1px solid $c-lines
+    .item-preview__title  
+      font 18px/24px $roboto-c
+    @media (min-width: 768px)
+      text-align center
+    .item-preview__info
+      @media (min-width: 768px)
+        padding 0 15px
+           
   &._wide
     @media (min-width: 768px)
       position relative

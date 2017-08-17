@@ -9,6 +9,16 @@ mixin item(tag, title, type, subtitle)
       if subtitle
         .item-preview__subtitle= subtitle
 
+mixin wine(tag, title, type)
+  .item-preview(class= type)
+    .item-preview__img
+      a(href='#')
+          img(src='http://via.placeholder.com/300x300' alt='')
+    .item-preview__info
+      a(href='#').item-preview__tag= tag
+      a(href='#').item-preview__title= title
+
+
 mixin expert(title)
   .item-preview._expert
     .item-preview__img

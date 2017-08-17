@@ -1,0 +1,90 @@
+include blocks/mixins.pug
+doctype html
+html.section-page
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Spoon
+    meta(name='description', content='Spoon')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  body
+    header.header._section
+        .header__wrapper
+            .header-logo: a Spoon Guide Russia
+            nav
+                .header__burger: span
+                ul.header-nav
+                    li.header-nav__item: a(href='#') О проекте
+                    li.header-nav__item: a(href='#') Мы рекомендуем
+                    li.header-nav__item: a(href='#') Рестораны
+                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item: a(href='#') Про вино
+                    li.header-nav__item: a(href='#') Наши эксперты
+                    li.header-nav__item: a(href='#') Гастрофестивали
+            a(href='#').header-promo
+                .header-promo_img
+                    img(src='http://via.placeholder.com/50x50' alt='')
+                .header-promo_title проект <br>А. Фомина
+    main.page
+        article.article
+            header
+                .hero
+                    .hero__img
+                        a(href='#')
+                            img(src='http://via.placeholder.com/1440x450' alt='')
+                    .hero__info
+                        a(href='#').hero__tag Про вино
+                        h1.hero__title Вино Koonunga Hill Chardonnay, 0.75 л., 2016 г.
+            .page__wrapper            
+                .article-social
+                .article-content._wine
+                    .wine-preview
+                        .wine-preview__img
+                            a(href='#'): img(src='http://via.placeholder.com/300x692' alt='')
+                        a(href='#').wine-preview__button Купить
+                    .wysiwyg
+                        h3 Характеристики
+                        p Промоакция синхронизирует портрет потребителя. Идеология выстраивания бренда, на первый взгляд, последовательно притягивает SWOT-анализ. Емкость рынка требовальна к креативу. Поисковая реклама нейтрализует общественный SWOT-анализ.
+                        p Фактор коммуникации, в рамках сегодняшних воззрений, основан на анализе телесмотрения. Такое понимание ситуации восходит к Эл Райс, при этом размещение экономит тактический план размещения, отвоевывая свою долю рынка. Построение бренда нейтрализует диктат потребителя.
+                        h3 О бренде
+                        p Потому что солнце по-другому светит, место другое. И так тут везде. Ни в какой Москве я и близко такого не получу». Ульянов пускается в рассуждения о знакомых бабушках под Ростовом, которые летом начнут поставлять в ресторан отличные овощи, и поет дифирамбы обязательному минимуму сортов шпината на армянском рынке возле его дома, добавляя очков патриотической речи шефа.
+                        p «Никуда отсюда не уеду, ни за какие деньги» – демонстрирует подлинный и совершенно искренний патриотизм Колодяжный. – «У меня здесь и рыба, и мясо, и я каждое утро могу поехать в лес, который вот он, рядом.
+                        h3 География
+                        p Потому что солнце по-другому светит, место другое. И так тут везде. Ни в какой Москве я и близко такого не получу». Ульянов пускается в рассуждения о знакомых бабушках под Ростовом, которые летом начнут поставлять в ресторан отличные овощи, и поет дифирамбы обязательному минимуму сортов шпината на армянском рынке возле его дома, добавляя очков патриотической речи шефа.
+                        p «Никуда отсюда не уеду, ни за какие деньги» – демонстрирует подлинный и совершенно искренний патриотизм Колодяжный. – «У меня здесь и рыба, и мясо, и я каждое утро могу поехать в лес, который вот он, рядом.
+                .article-social
+                .banner._border
+                    img(src='http://via.placeholder.com/940x180' alt='')
+                .items-list._triple._read-more
+                    p.items-list__title Читайте также
+                    +wine('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_frame')
+                    +wine('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_frame')
+                    +wine('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_frame')
+    footer.footer
+        a(href='/').footer-logo
+        ul.footer-nav
+            li.footer-nav__item: a(href='#') О проекте
+            li.footer-nav__item: a(href='#') Азбука
+            li.footer-nav__item: a(href='#') Контактная информация
+            li.footer-nav__item: a(href='#') Реклама на сайте
+            li.footer-nav__item: a(href='#') Для правообладателей
+        ul.social-icons    
+            li.social-icons__item._fb: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#fb')
+            li.social-icons__item._vk: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#vk')
+            li.social-icons__item._tw: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#tw')
+            li.social-icons__item._in: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#in')
+            li.social-icons__item._ok: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#ok')
+
+        .footer-rights © 2011–2017 Spoon Guide. Все права защищены. 18+        
