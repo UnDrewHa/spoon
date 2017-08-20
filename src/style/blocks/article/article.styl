@@ -6,9 +6,12 @@
     text-align center
     @media (min-width 768px)
       font-size 26px
+      padding 0 60px
+    @media (min-width 768px)
+      font-size 26px
       padding 0 90px
+      
   &-social  
-    background tomato
     height 44px
     margin 40px auto
     width 300px
@@ -29,22 +32,37 @@
   &-footer
     border-top 1px solid $c-lines  
     border-bottom 1px solid $c-lines  
-    padding 25px 50px
+    padding 20px 10px
+    @media (min-width 768px)
+      padding 25px 50px
     &__item
       color $c-title
-      font 16px/26px $roboto-c
+      font 14px/1.625 $roboto-c
+      padding 0 0 0 70px
+      position relative
       text-transform uppercase
+      @media (min-width 768px)
+        font-size 16px
+        padding 0 0 0 80px
+        
+      *
+        text-indent 0
       + .article-footer__item
         margin 10px 0 0
+      span
+        position absolute
+        top 0
+        left 0  
       a
         color $c-accent
         font-family $roboto
-        margin 0 0 0 35px
+        margin 0 10px 10px 0
         &:hover
           color $c-title
-        + a
-          margin 0 0 0 10px
       &._tags
+        padding 0 0 0 59px
+        @media (min-width 768px)
+          padding 0 0 0 69px
         a
           border 1px solid $c-slider-dots
           border-radius 3px

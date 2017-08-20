@@ -1,24 +1,39 @@
 .wysiwyg
   color #000
   font 15px/1.44 $roboto
+  margin-left: -10px
+  margin-right: -10px
   padding 0
   text-align justify
   @media (min-width 768px)
     font-size 18px
+    margin-left: 0
+    margin-right: 0
   > *
     margin 0 0 20px
     padding 0 20px
     @media (min-width 768px)
       margin 0 0 30px
+      padding 0 30px
+    @media (min-width 768px)
+      margin 0 0 30px
       padding 0 50px
-  img
+    
+  > img
+    display block
+    margin 54px 0
     margin-left auto
     margin-right auto
     max-width 100%
     padding 0
   .slider
+    margin 54px 0
     padding 0
     position relative
+    text-align center
+    .slick-slide
+      img
+        display inline-block
     .slider-arrow
       position absolute
       top 50%
@@ -26,14 +41,19 @@
       display flex
       justify-content center
       align-items center
-      height 74px
+      height 50px
       transform translateY(-50%)
-      width 90px
+      width 50px
       z-index 1
+      @media (min-width 768px)
+        height 74px
+        width 90px
     &__prev
       left 0
-      @media (min-width: 1000px)
-        left -100px  
+      @media (min-width: 1000px) and (max-width: 1200px)
+        left 0
+      @media (min-width: 1201px)
+        left -100px
       &::before
         background url('../i/prev_arrow.png') 50% no-repeat
         background-size 19px 37px
@@ -43,11 +63,15 @@
         transition transform .3s ease
         width 19px
       &:hover::before
-        transform translateX(-15px)  
+        @media (min-width: 1025px)
+          transform translateX(-15px)
     &__next
       right 0
-      @media (min-width: 1000px)
-        right -100px  
+      @media (min-width: 1000px) and (max-width: 1200px)
+        right 0
+      @media (min-width: 1201px)
+        right -100px
+        
       &::before
         background url('../i/next_arrow.png') 50% no-repeat
         background-size 19px 37px
@@ -57,12 +81,17 @@
         transition transform .3s ease
         width 19px
       &:hover::before
-        transform translateX(15px)  
+        @media (min-width: 1025px)
+          transform translateX(15px)  
         
     p
     &__caption
       color $c-title
       font bold 18px/1.3 $roboto-c
-      margin .8em 0 0     
-      text-align center
+      margin 0
+      padding .8em 0 0
+      a
+        color inherit
+        &:hover
+          text-decoration underline
   
