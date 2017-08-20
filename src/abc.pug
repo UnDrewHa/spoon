@@ -30,7 +30,8 @@ html.section-page
 
     main.page
         h1.page-header Азбука SPOON GUIDE
-        ul.abc-filter
+        .abc-filter
+          ul
             li.abc-filter__item._selected: a(href='#') Все
             li.abc-filter__item: a(href='#') Сомелье
             li.abc-filter__item: a(href='#') Шеф-повара
@@ -38,6 +39,16 @@ html.section-page
             li.abc-filter__item: a(href='#') Вино
             li.abc-filter__item: a(href='#') Бары
             li.abc-filter__item: a(href='#') Рестораны
+          .abc-filter__select
+            .select
+              select
+                option Все
+                option Сомелье
+                option Шеф-повара
+                option Рестораторы
+                option Вино
+                option Бары
+                option Рестораны
         form.abc-form
             .abc-form__wrapper
                 .abc-form__field

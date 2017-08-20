@@ -1,0 +1,121 @@
+include blocks/mixins.pug
+doctype html
+html.section-page
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Spoon
+    meta(name='description', content='Spoon')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  body
+    header.header._section
+        .header__wrapper
+            .header-logo: a Spoon Guide Russia
+            nav
+                .header__burger: span
+                ul.header-nav
+                    li.header-nav__item: a(href='#') О проекте
+                    li.header-nav__item: a(href='#') Мы рекомендуем
+                    li.header-nav__item: a(href='#') Рестораны
+                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item: a(href='#') Про вино
+                    li.header-nav__item: a(href='#') Наши эксперты
+                    li.header-nav__item: a(href='#') Гастрофестивали
+            a(href='#').header-promo
+                .header-promo_img
+                    img(src='http://via.placeholder.com/50x50' alt='')
+                .header-promo_title проект <br>А. Фомина
+    main.page
+        article.article
+            header
+                .hero
+                    .hero__img
+                        a(href='#')
+                            img(src='http://via.placeholder.com/1440x450' alt='')
+                    .hero__info
+                        a(href='#').hero__tag Про вино
+                        h1.hero__title Ресторан CHRISTIAN
+            .page__wrapper
+                .article__subtitle Иван Глушков съездил в горы за травами, попробовал морскую лисицу и восхитился туристическими сырниками.     
+                .article-social
+                    .ya-share2(data-services="facebook,twitter,vkontakte,gplus")
+                .article-content._two-column
+                    .article-content__aside
+                        .rest-info
+                            ul.rest-info__base
+                                li Шеф-повар: Кристиан Лоренцини
+                                li Кухня: авторская
+                                li 17 мест, летняя веранда – 60 мест
+                                li Дата открытия: 2013
+                            ul.rest-info__best
+                                li Каменные пирожки
+                                li Кофейные тальятелли с медведем и его добычей
+                                li Картофель в обмане
+                            ul.rest-info__address
+                                li Кутузовский пр-т, 2/1, стр. 1а
+                                li +7 4999 243 25 69
+                                li: a(href='#') CHRISTIAN
+                    .article-content__main
+                        .wysiwyg
+                            p Кристиан Лоренцини открыл именной ресторан. Он мечтал об этом с юных лет, когда начал работать в отцовском ресторане в Тоскане и стремился к независимости и свободе. CHRISTIAN очень похож на своего хозяина.
+                            p Это парадоксально неформальное заведение. С открытой кухней и открытой душой. С нечопорной атмосферой «for friends». С авторской кухней, построенной на самых выдержанных домашних рецептах нескольких поколений семьи Лоренцини, которая представлена в вызывающе-забавной подаче.
+                            p Прописка у ресторана – весьма солидная. CHRISTIAN расположен на первом этаже жилого дома, примыкающего к левому крылу гостиницы «Украина». Монументальная архитектура знаменитой высотки эффектно контрастирует с интерьером и атмосферой заведения. Переступая порог, попадаешь в другую страну. Уютную, милую, теплую, но – ироничную.
+                        .item-preview._border
+                            .item-preview__img
+                              a(href='#')
+                                  img(src='http://via.placeholder.com/300x300' alt='')
+                            .item-preview__info
+                              a(href='#').item-preview__tag Рестораторы
+                              a(href='#').item-preview__title Бреиова Гаяне
+                              .item-preview__subtitle Яркая, красивая, креативная Гаяне Бреиова, владелица ресторанов Gayane’s и Панаехали – одна из самых известных московских женщин-рестораторов.
+                .slider
+                    .slider__prev#prev123454236.slider-arrow.slick-prev
+                    .slider__next#next123454236.slider-arrow.slick-next
+                    .slider__wrap(data-slick='{"adaptiveHeight":true,"swipe":true,"fade":true,"speed":400,"infinite":"true","dots":false,"arrows":true,"prevArrow":"#prev123454236","nextArrow":"#next123454236"}')
+                        div.slider-item
+                            img(src='http://via.placeholder.com/960x640' alt='')
+                        div.slider-item
+                            img(src='http://via.placeholder.com/960x640' alt='')
+                        div.slider-item
+                            img(src='http://via.placeholder.com/960x640' alt='')
+                        div.slider-item
+                            img(src='http://via.placeholder.com/960x640' alt='')
+                .rest-map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8981.746698289553!2d37.5654366!3d55.7509162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5568027da0778704!2sChristian!5e0!3m2!1sru!2sru!4v1503241716754" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                .banner._border
+                    img(src='http://via.placeholder.com/940x180' alt='')
+                .items-list._triple._read-more
+                    p.items-list__title Читайте также
+                    +wine('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_frame')
+                    +wine('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_frame')
+                    +wine('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_frame')
+    footer.footer
+        a(href='/').footer-logo
+        ul.footer-nav
+            li.footer-nav__item: a(href='#') О проекте
+            li.footer-nav__item: a(href='#') Азбука
+            li.footer-nav__item: a(href='#') Контактная информация
+            li.footer-nav__item: a(href='#') Реклама на сайте
+            li.footer-nav__item: a(href='#') Для правообладателей
+        ul.social-icons    
+            li.social-icons__item._fb: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#fb')
+            li.social-icons__item._vk: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#vk')
+            li.social-icons__item._tw: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#tw')
+            li.social-icons__item._in: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#in')
+            li.social-icons__item._ok: a(href='#')
+                svg
+                    use(xlink:href='i/icons.svg#ok')
+
+        .footer-rights © 2011–2017 Spoon Guide. Все права защищены. 18+        
+    script(src='js/main.js')

@@ -1,0 +1,44 @@
+.rest
+  &-info
+    font italic 16px/1.625 $roboto-c
+    margin 0
+    li
+      list-style-type none
+      margin 0
+      padding 0
+    a
+      color $c-accent
+      &:hover
+        text-decoration underline 
+    &__best
+      border-top 1px solid $c-lines
+      border-bottom 1px solid $c-lines
+      margin 20px 0
+      padding 20px 0
+      li
+        padding 0 0 0 21px
+        position relative
+        &::before
+          position absolute
+          top 10px
+          left 8px
+          background $c-accent
+          content ''
+          display block
+          height 4px
+          width 4px
+    &__base
+    &__address
+      margin 0
+      padding 0
+  &-map
+    height 0
+    padding 46.875% 0 0
+    position relative
+    iframe
+      position absolute
+      top 0
+      left 0
+      height 100%
+      width 100%
+    
