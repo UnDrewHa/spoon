@@ -119,3 +119,32 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.slick-dots li {
+    background: #e0d8d8;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 8px;
+}
+
+.slick-dots li + li {
+    margin: 0 0 0 12px;
+}
+
+.slick-dots .slick-active {
+    background: #f60;
+}
+
+.slick-dots button {
+    display: none;
+}

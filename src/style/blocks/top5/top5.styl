@@ -1,0 +1,60 @@
+.top5
+  margin 0
+  padding 0 0 40px 0
+  position relative
+  &__arrows
+    height 250px
+    position absolute
+    top 0
+    left 0
+    right 0
+    margin 0 auto
+    pointer-events none
+    z-index 100
+    @media (min-width: 768px)
+      height 350px
+    @media (min-width: 1020px)
+      height 450px
+    @media (min-width: 1300px)
+      margin 0 auto
+      width 1224px
+  &-arrow
+    position absolute
+    top 50%
+    cursor pointer
+    display flex
+    justify-content center
+    align-items center
+    height 89px
+    pointer-events auto
+    transform translateY(-50%)
+    width 120px
+    z-index 2
+  &__prev
+  &__next
+    &::before
+      content ''
+      display block
+      height 50px
+      transition transform .2s ease
+      width 46px
+      @media (min-width: 768px)
+        height 70px
+      @media (min-width: 1020px)
+        height 89px
+  &__prev
+    left 0
+    @media (min-width: 1300px)
+      left -37px
+    &::before
+      background url('../i/prev_arrow_big.png') 50% no-repeat
+    &:hover::before
+      transform translateX(-17px)
+  &__next
+    right 0
+    @media (min-width: 1300px)
+      right -37px
+    &::before
+      background url('../i/next_arrow_big.png') 50% no-repeat
+    &:hover::before
+      transform translateX(17px)

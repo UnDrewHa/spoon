@@ -1,5 +1,4 @@
 .hero
-  height 290px
   position relative
   @media (min-width: 768px)
     height 410px
@@ -24,17 +23,14 @@
     @media (min-width: 1020px)
       height 450px
   &__info
-    position absolute
-    bottom 25px
-    left 10px
-    right 10px
     background #fff
-    t_radius(10px)
     margin 0 auto
     min-height 85px
-    padding 0 15px 0
+    padding 0 15px 25px
     text-align center
     @media (min-width: 768px)
+      position absolute
+      bottom 25px
       left 20px
       right 20px
       t_radius()
