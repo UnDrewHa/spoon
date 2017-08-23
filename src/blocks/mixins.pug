@@ -13,7 +13,7 @@ mixin wine(tag, title, type)
   .item-preview(class= type)
     .item-preview__img
       a(href='#')
-          img(src='http://via.placeholder.com/300x300' alt='')
+          img(src='http://via.placeholder.com/300x692' alt='')
     .item-preview__info
       a(href='#').item-preview__tag= tag
       a(href='#').item-preview__title= title
@@ -30,7 +30,10 @@ mixin expert(title)
 
 mixin pagination()
   ul.pagination
-    li.pagination__item._prev._disabled: a(href='#') ← Предыдущая
+    li.pagination__item._prev._disabled
+      a(href='#') ← Предыдущая
+        svg
+          use(xlink:href='i/icons.svg#prev_arrow')
     li.pagination__item: a(href='#') 1
     li.pagination__item: a(href='#') 2
     li.pagination__item: a(href='#') 3
@@ -40,4 +43,7 @@ mixin pagination()
     li.pagination__item: a(href='#') 7
     li.pagination__item: a(href='#') 8
     li.pagination__item: a(href='#') 9
-    li.pagination__item._next: a(href='#') Следующая →
+    li.pagination__item._next
+      a(href='#') Следующая →
+        svg
+          use(xlink:href='i/icons.svg#next_arrow')

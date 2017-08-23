@@ -5,10 +5,10 @@
     margin-bottom 30px
     padding 0 20px
     text-align center
-    @media (min-width 768px)
+    @media (min-width $tablet)
       font-size 26px
       padding 0 60px
-    @media (min-width 768px)
+    @media (min-width $tablet)
       font-size 26px
       padding 0 90px
       
@@ -18,31 +18,56 @@
     width 300px
   &-content
     &._two-column
-      @media (min-width: 768px)
+      @media (min-width: $tablet)
         display flex
-        .article-content__aside
-          flex 0 0 300px
+      .article-content__aside
+        flex 0 0 300px
+        margin 0 auto 30px
+        width 300px
+        @media (min-width: $tablet)
           margin 0 30px 0 0
-          width 300px
-        .article-content__main
+      .article-content__main
+        @media (min-width: $tablet)
           flex-grow 1
           min-width 0
           .wysiwyg > *
             margin 0 0 20px
             padding 0
+        ._border
+          @media (min-width: $tablet)
+            flex-direction: column
+            max-width 400px
+            margin-left auto
+            margin-right auto
+          @media (min-width: $desktop)
+            flex-direction: row
+            max-width none
+          .item-preview__img
+            @media (min-width: $tablet)
+              margin 0
+            @media (min-width: $desktop)
+              margin 0 30px 0 0
+          .item-preview__tag
+            @media (min-width: $tablet)
+              border-top 4px solid $c-accent
+              border-bottom none
+              padding 10px 0 7px
+            @media (min-width: $desktop)
+              border-bottom 4px solid $c-accent
+              border-top none
+              padding 7px 0 10px
   &-footer
     border-top 1px solid $c-lines  
     border-bottom 1px solid $c-lines  
     padding 20px 10px
-    @media (min-width 768px)
+    @media (min-width $tablet)
       padding 25px 50px
     &__item
       color $c-title
       font 14px/1.625 $roboto-c
       padding 0 0 0 70px
       position relative
-      text-transform uppercase
-      @media (min-width 768px)
+      @media (min-width $tablet)
         font-size 16px
         padding 0 0 0 80px
         
@@ -62,7 +87,7 @@
           color $c-title
       &._tags
         padding 0 0 0 59px
-        @media (min-width 768px)
+        @media (min-width $tablet)
           padding 0 0 0 69px
         a
           border 1px solid $c-slider-dots

@@ -1,21 +1,22 @@
 .header
   background #fff
-  @media (max-width: 1019px)
+  @media (max-width: $desktop - 1)
     height 50px
   &__wrapper
-    @media (max-width: 1019px)
-      padding 10px 0 0
-    @media (min-width 1020px)
+    @media (max-width: $desktop - 1)
+      padding 8px 0
+    @media (min-width $desktop)
       margin 0 auto
       padding 30px 20px 16px
       width 1000px
   &-logo
-    background url('../i/logo.png') 50% no-repeat
+    background url('../i/logo.svg') 50% no-repeat
     background-size contain
+    display block
     margin 0 auto
-    height 39px
+    height 34px
     width 109px
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       height 64px
       width 179px
       &._big-logo
@@ -31,9 +32,9 @@
       position: absolute;
       width: 1px;
   nav
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       display block
-    @media (max-width: 1019px)
+    @media (max-width: $desktop - 1)
       position absolute
       top 0
       right 0
@@ -43,7 +44,7 @@
       height 50px
       width 50px
   &__burger
-    @media (max-width: 1019px)
+    @media (max-width: $desktop - 1)
       cursor pointer
       height 44px
       position relative
@@ -70,9 +71,9 @@
       &::after
         bottom: 14px
   &-nav
-    @media (max-width: 1019px)
+    @media (max-width: $desktop - 1)
       display none
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       display block
       font-size 0
       margin 20px 0 0
@@ -96,7 +97,7 @@
             color $c-accent  
   
   &-promo
-    @media (max-width: 1019px)
+    @media (max-width: $desktop - 1)
       display none
       position absolute
       top 50%
@@ -128,21 +129,21 @@
     border-bottom 1px solid $c-lines
     padding 0
     z-index 1000
-    @media (min-width 1020px)
+    @media (min-width $desktop)
       height 81px
     .header__wrapper
-      @media (min-width 1020px)
+      @media (min-width $desktop)
         display flex
         justify-content center
         align-items center
         padding 0 20px
     .header-logo
-      @media (min-width 1020px)
+      @media (min-width $desktop)
         height 46px
-        margin 0 auto 0 0
+        margin 6px auto 0
         width 126px
     .header-nav
-      @media (min-width 1020px)
+      @media (min-width $desktop)
         height 81px
         margin 0
         &__item

@@ -11,8 +11,7 @@
   </head>
   <body>
     <header class="header _section">
-      <div class="header__wrapper">
-        <div class="header-logo"><a>Spoon Guide Russia</a></div>
+      <div class="header__wrapper"><a class="header-logo" href="#"></a>
         <nav>
           <div class="header__burger"><span></span></div>
           <ul class="header-nav">
@@ -165,7 +164,10 @@
           </div>
         </div>
         <ul class="pagination">
-          <li class="pagination__item _prev _disabled"><a href="#">← Предыдущая</a></li>
+          <li class="pagination__item _prev _disabled"><a href="#">← Предыдущая
+              <svg>
+                <use xlink:href="i/icons.svg#prev_arrow"></use>
+              </svg></a></li>
           <li class="pagination__item"><a href="#">1</a></li>
           <li class="pagination__item"><a href="#">2</a></li>
           <li class="pagination__item"><a href="#">3</a></li>
@@ -175,9 +177,12 @@
           <li class="pagination__item"><a href="#">7</a></li>
           <li class="pagination__item"><a href="#">8</a></li>
           <li class="pagination__item"><a href="#">9</a></li>
-          <li class="pagination__item _next"><a href="#">Следующая →</a></li>
+          <li class="pagination__item _next"><a href="#">Следующая →
+              <svg>
+                <use xlink:href="i/icons.svg#next_arrow"></use>
+              </svg></a></li>
         </ul>
-        <div class="banner _border"><img src="http://via.placeholder.com/940x180" alt=""></div>
+        <div class="banner"><img src="http://via.placeholder.com/960x200" alt=""></div>
       </div>
     </main>
     <footer class="footer"><a class="footer-logo" href="/"></a>

@@ -2,19 +2,19 @@
   margin 0
   padding 75px 0
   text-align center
-  @media (min-width: 768px)
+  @media (min-width: $tablet)
     padding 110px 0
-  @media (min-width: 1020px)
+  @media (min-width: $desktop)
     padding 150px 0
     
   &__header
     color $c-title
     font 40px/1 $roboto-c
     margin 0 0 60px
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       font-size 50px
       margin 0 0 90px
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       font-size 60px
       margin 0 0 110px
       
@@ -22,9 +22,9 @@
       display block
       margin 5px auto 0
       width 180px
-      @media (min-width: 768px)
+      @media (min-width: $tablet)
         width 220px
-      @media (min-width: 1020px)
+      @media (min-width: $desktop)
         width 280px
         
   &__text
@@ -33,10 +33,10 @@
     margin: 0 auto 1.3em
     padding 0 10px
     max-width: 490px
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       font-size 22px
       max-width: 700px
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       font-size 26px
       
     a

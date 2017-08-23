@@ -11,15 +11,14 @@
   </head>
   <body>
     <header class="header _section">
-      <div class="header__wrapper">
-        <div class="header-logo"><a>Spoon Guide Russia</a></div>
+      <div class="header__wrapper"><a class="header-logo" href="#"></a>
         <nav>
           <div class="header__burger"><span></span></div>
           <ul class="header-nav">
             <li class="header-nav__item"><a href="#">О проекте</a></li>
             <li class="header-nav__item"><a href="#">Мы рекомендуем</a></li>
-            <li class="header-nav__item"><a href="#">Рестораны</a></li>
-            <li class="header-nav__item _active"><a href="#">Бары</a></li>
+            <li class="header-nav__item _active"><a href="#">Рестораны</a></li>
+            <li class="header-nav__item"><a href="#">Бары</a></li>
             <li class="header-nav__item"><a href="#">Про вино</a></li>
             <li class="header-nav__item"><a href="#">Наши эксперты</a></li>
             <li class="header-nav__item"><a href="#">Гастрофестивали</a></li>
@@ -62,8 +61,16 @@
             <blockquote>Он, оказывается, автономно от всего поварского мира изобрел моднейший тренд</blockquote>
             <p>Потому что солнце по-другому светит, место другое. И так тут везде. Ни в какой Москве я и близко такого не получу». Ульянов пускается в рассуждения о знакомых бабушках под Ростовом, которые летом начнут поставлять в ресторан отличные овощи, и поет дифирамбы обязательному минимуму сортов шпината на армянском рынке возле его дома, добавляя очков патриотической речи шефа.</p>
             <div class="slider">
-              <div class="slider__prev slider-arrow slick-prev" id="prev123454236"></div>
-              <div class="slider__next slider-arrow slick-next" id="next123454236"></div>
+              <div class="slider__prev slider-arrow slick-prev" id="prev123454236">
+                <svg>
+                  <use xlink:href="i/icons.svg#prev_arrow"></use>
+                </svg>
+              </div>
+              <div class="slider__next slider-arrow slick-next" id="next123454236">
+                <svg>
+                  <use xlink:href="i/icons.svg#next_arrow"></use>
+                </svg>
+              </div>
               <div class="slider__wrap" data-slick="{&quot;adaptiveHeight&quot;:true,&quot;swipe&quot;:true,&quot;fade&quot;:true,&quot;speed&quot;:400,&quot;infinite&quot;:&quot;true&quot;,&quot;dots&quot;:false,&quot;arrows&quot;:true,&quot;prevArrow&quot;:&quot;#prev123454236&quot;,&quot;nextArrow&quot;:&quot;#next123454236&quot;}">
                 <div class="slider-item"><img src="http://via.placeholder.com/960x500" alt="">
                   <p class="slider-item__caption">Иван Глушков</p>
@@ -85,7 +92,7 @@
             <div class="article-footer__item _author"><span>Автор</span><a href="#">Иван Глушков</a></div>
             <div class="article-footer__item _tags"><span>Теги</span><a href="#">Топ 100 ресторанов</a><a href="#">Сочи</a><a href="#">Обзоры ретсоранов</a><a href="#">Топ 100 ресторанов</a><a href="#">Сочи</a><a href="#">Обзоры ретсоранов</a><a href="#">Обзоры ретсоранов</a><a href="#">Топ 100 ресторанов</a><a href="#">Сочи</a><a href="#">Обзоры ретсоранов</a></div>
           </footer>
-          <div class="banner _border"><img src="http://via.placeholder.com/940x180" alt=""></div>
+          <div class="banner"><img src="http://via.placeholder.com/960x200" alt=""></div>
           <div class="items-list _triple _read-more">
             <p class="items-list__title">Читайте также</p>
             <div class="item-preview _center">

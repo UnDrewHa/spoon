@@ -12,7 +12,7 @@ html.section-page
   body
     header.header._section
         .header__wrapper
-            .header-logo: a Spoon Guide Russia
+            a(href='#').header-logo
             nav
                 .header__burger: span
                 ul.header-nav
@@ -125,8 +125,8 @@ html.section-page
                 +expert('Андрей Фомин')
                 +expert('Андрей Фомин')
             +pagination()
-            .banner._border
-                img(src='http://via.placeholder.com/940x180' alt='')
+            .banner
+                img(src='http://via.placeholder.com/960x200' alt='')
     footer.footer
         a(href='/').footer-logo
         ul.footer-nav

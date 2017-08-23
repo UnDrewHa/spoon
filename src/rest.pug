@@ -12,14 +12,14 @@ html.section-page
   body
     header.header._section
         .header__wrapper
-            .header-logo: a Spoon Guide Russia
+            a(href='#').header-logo
             nav
                 .header__burger: span
                 ul.header-nav
                     li.header-nav__item: a(href='#') О проекте
                     li.header-nav__item: a(href='#') Мы рекомендуем
-                    li.header-nav__item: a(href='#') Рестораны
-                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item._active: a(href='#') Рестораны
+                    li.header-nav__item: a(href='#') Бары
                     li.header-nav__item: a(href='#') Про вино
                     li.header-nav__item: a(href='#') Наши эксперты
                     li.header-nav__item: a(href='#') Гастрофестивали
@@ -35,7 +35,7 @@ html.section-page
                         a(href='#')
                             img(src='http://via.placeholder.com/1440x450' alt='')
                     .hero__info
-                        a(href='#').hero__tag Про вино
+                        a(href='#').hero__tag Рестораны
                         h1.hero__title Ресторан CHRISTIAN
             .page__wrapper
                 .article__subtitle Иван Глушков съездил в горы за травами, попробовал морскую лисицу и восхитился туристическими сырниками.     
@@ -72,7 +72,11 @@ html.section-page
                               .item-preview__subtitle Яркая, красивая, креативная Гаяне Бреиова, владелица ресторанов Gayane’s и Панаехали – одна из самых известных московских женщин-рестораторов.
                 .slider
                     .slider__prev#prev123454236.slider-arrow.slick-prev
+                        svg
+                            use(xlink:href='i/icons.svg#prev_arrow')
                     .slider__next#next123454236.slider-arrow.slick-next
+                        svg
+                            use(xlink:href='i/icons.svg#next_arrow')
                     .slider__wrap(data-slick='{"adaptiveHeight":true,"swipe":true,"fade":true,"speed":400,"infinite":"true","dots":false,"arrows":true,"prevArrow":"#prev123454236","nextArrow":"#next123454236"}')
                         div.slider-item
                             img(src='http://via.placeholder.com/960x640' alt='')
@@ -85,8 +89,8 @@ html.section-page
                 .rest-map
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8981.746698289553!2d37.5654366!3d55.7509162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5568027da0778704!2sChristian!5e0!3m2!1sru!2sru!4v1503241716754" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                .banner._border
-                    img(src='http://via.placeholder.com/940x180' alt='')
+                .banner
+                    img(src='http://via.placeholder.com/960x200' alt='')
                 .items-list._triple._read-more
                     p.items-list__title Читайте также
                     +wine('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_frame')

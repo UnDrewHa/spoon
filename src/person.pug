@@ -12,14 +12,14 @@ html.section-page
   body
     header.header._section
         .header__wrapper
-            .header-logo: a Spoon Guide Russia
+            a(href='#').header-logo
             nav
                 .header__burger: span
                 ul.header-nav
                     li.header-nav__item: a(href='#') О проекте
                     li.header-nav__item: a(href='#') Мы рекомендуем
-                    li.header-nav__item: a(href='#') Рестораны
-                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item._active: a(href='#') Рестораны
+                    li.header-nav__item: a(href='#') Бары
                     li.header-nav__item: a(href='#') Про вино
                     li.header-nav__item: a(href='#') Наши эксперты
                     li.header-nav__item: a(href='#') Гастрофестивали
@@ -48,8 +48,8 @@ html.section-page
                     p «Никуда отсюда не уеду, ни за какие деньги» – демонстрирует подлинный и совершенно искренний патриотизм Колодяжный. – «У меня здесь и рыба, и мясо, и я каждое утро могу поехать в лес, который вот он, рядом. 
                 .article-social
                     .ya-share2(data-services="facebook,twitter,vkontakte,gplus")
-                .banner._border
-                    img(src='http://via.placeholder.com/940x180' alt='')
+                .banner
+                    img(src='http://via.placeholder.com/960x200' alt='')
                 .items-list._triple._read-more
                     p.items-list__title Читайте также
                     +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_center')     

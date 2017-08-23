@@ -12,14 +12,14 @@ html.section-page
   body
     header.header._section
         .header__wrapper
-            .header-logo: a Spoon Guide Russia
+            a(href='#').header-logo
             nav
                 .header__burger: span
                 ul.header-nav
                     li.header-nav__item: a(href='#') О проекте
                     li.header-nav__item: a(href='#') Мы рекомендуем
-                    li.header-nav__item: a(href='#') Рестораны
-                    li.header-nav__item._active: a(href='#') Бары
+                    li.header-nav__item._active: a(href='#') Рестораны
+                    li.header-nav__item: a(href='#') Бары
                     li.header-nav__item: a(href='#') Про вино
                     li.header-nav__item: a(href='#') Наши эксперты
                     li.header-nav__item: a(href='#') Гастрофестивали
@@ -59,7 +59,11 @@ html.section-page
                     p Потому что солнце по-другому светит, место другое. И так тут везде. Ни в какой Москве я и близко такого не получу». Ульянов пускается в рассуждения о знакомых бабушках под Ростовом, которые летом начнут поставлять в ресторан отличные овощи, и поет дифирамбы обязательному минимуму сортов шпината на армянском рынке возле его дома, добавляя очков патриотической речи шефа.
                     .slider
                       .slider__prev#prev123454236.slider-arrow.slick-prev
+                        svg
+                            use(xlink:href='i/icons.svg#prev_arrow')
                       .slider__next#next123454236.slider-arrow.slick-next
+                        svg
+                            use(xlink:href='i/icons.svg#next_arrow')
                       .slider__wrap(data-slick='{"adaptiveHeight":true,"swipe":true,"fade":true,"speed":400,"infinite":"true","dots":false,"arrows":true,"prevArrow":"#prev123454236","nextArrow":"#next123454236"}')
                         div.slider-item
                             img(src='http://via.placeholder.com/960x500' alt='')
@@ -91,8 +95,8 @@ html.section-page
                         a(href='#') Сочи
                         a(href='#') Обзоры ретсоранов
 
-                .banner._border
-                    img(src='http://via.placeholder.com/940x180' alt='')
+                .banner
+                    img(src='http://via.placeholder.com/960x200' alt='')
                 .items-list._triple._read-more
                     p.items-list__title Читайте также
                     +item('Про вино','Прием Cartier в музее-усадьбе «Архангельское»', '_center')     

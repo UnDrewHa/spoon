@@ -11,9 +11,9 @@
     margin 0 auto
     pointer-events none
     z-index 100
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       height 350px
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       height 450px
     @media (min-width: 1300px)
       margin 0 auto
@@ -32,29 +32,26 @@
     z-index 2
   &__prev
   &__next
-    &::before
-      content ''
+    svg
       display block
-      height 50px
+      fill #fff
       transition transform .2s ease
-      width 46px
-      @media (min-width: 768px)
-        height 70px
-      @media (min-width: 1020px)
-        height 89px
+      width 50px
+      @media (min-width: $tablet)
+        width 70px
+      @media (min-width: $desktop)
+        width 89px
   &__prev
     left 0
     @media (min-width: 1300px)
       left -37px
-    &::before
-      background url('../i/prev_arrow_big.png') 50% no-repeat
-    &:hover::before
-      transform translateX(-17px)
+    &:hover
+      svg
+        transform translateX(-17px)
   &__next
     right 0
     @media (min-width: 1300px)
       right -37px
-    &::before
-      background url('../i/next_arrow_big.png') 50% no-repeat
-    &:hover::before
-      transform translateX(17px)
+    &:hover
+      svg
+        transform translateX(17px)

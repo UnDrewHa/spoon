@@ -32,10 +32,18 @@
     <main class="page">
       <div class="top5">
         <div class="top5__arrows">
-          <div class="top5__prev top5-arrow slick-prev" id="prev123454236"></div>
-          <div class="top5__next top5-arrow slick-next" id="next123454236"></div>
+          <div class="top5__prev top5-arrow slick-prev" id="prev123454236">
+            <svg>
+              <use xlink:href="i/icons.svg#prev_arrow"></use>
+            </svg>
+          </div>
+          <div class="top5__next top5-arrow slick-next" id="next123454236">
+            <svg>
+              <use xlink:href="i/icons.svg#next_arrow"></use>
+            </svg>
+          </div>
         </div>
-        <div class="top5__wrap" data-slick="{&quot;swipe&quot;:true,&quot;fade&quot;:true,&quot;speed&quot;:400,&quot;infinite&quot;:&quot;true&quot;,&quot;dots&quot;:true,&quot;arrows&quot;:true,&quot;prevArrow&quot;:&quot;#prev123454236&quot;,&quot;nextArrow&quot;:&quot;#next123454236&quot;}">
+        <div class="top5__wrap" data-slick="{&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:4000,&quot;swipe&quot;:true,&quot;fade&quot;:true,&quot;speed&quot;:400,&quot;infinite&quot;:&quot;true&quot;,&quot;dots&quot;:true,&quot;arrows&quot;:true,&quot;prevArrow&quot;:&quot;#prev123454236&quot;,&quot;nextArrow&quot;:&quot;#next123454236&quot;}">
           <div class="hero">
             <div class="hero__img"><a href="#"><img src="http://via.placeholder.com/1440x450" alt=""></a></div>
             <div class="hero__info"><a class="hero__tag" href="#">Рестораны</a><a class="hero__title" href="#">Ужин Chopard в честь запуска коллекции Rihanna x Chopard</a></div>
@@ -91,7 +99,7 @@
             </div>
           </div>
           <div class="page-sidebar">
-            <div class="banner _border _sidebar-banner"><img src="http://via.placeholder.com/280x580" alt=""></div>
+            <div class="banner _sidebar-banner"><img src="http://via.placeholder.com/300x600" alt=""></div>
             <div class="items-list _top3">
               <div class="items-list__title">Top-3</div>
               <div class="item-preview _top">
@@ -143,7 +151,7 @@
           <div class="item-preview__info"><a class="item-preview__tag" href="#">Про вино</a><a class="item-preview__title" href="#">Как выбрать хорошее вино: 5 простых правил</a>
           </div>
         </div>
-        <div class="banner _border"><img src="http://via.placeholder.com/940x180" alt=""></div>
+        <div class="banner"><img src="http://via.placeholder.com/960x200" alt=""></div>
         <div class="items-list _list21">
           <div class="item-preview _main">
             <div class="item-preview__img"><a href="#"><img src="http://via.placeholder.com/630x336" alt=""/></a></div>
@@ -205,7 +213,10 @@
           </div>
         </div>
         <ul class="pagination">
-          <li class="pagination__item _prev _disabled"><a href="#">← Предыдущая</a></li>
+          <li class="pagination__item _prev _disabled"><a href="#">← Предыдущая
+              <svg>
+                <use xlink:href="i/icons.svg#prev_arrow"></use>
+              </svg></a></li>
           <li class="pagination__item"><a href="#">1</a></li>
           <li class="pagination__item"><a href="#">2</a></li>
           <li class="pagination__item"><a href="#">3</a></li>
@@ -215,7 +226,10 @@
           <li class="pagination__item"><a href="#">7</a></li>
           <li class="pagination__item"><a href="#">8</a></li>
           <li class="pagination__item"><a href="#">9</a></li>
-          <li class="pagination__item _next"><a href="#">Следующая →</a></li>
+          <li class="pagination__item _next"><a href="#">Следующая →
+              <svg>
+                <use xlink:href="i/icons.svg#next_arrow"></use>
+              </svg></a></li>
         </ul>
       </div>
     </main>

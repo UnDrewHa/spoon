@@ -1,9 +1,9 @@
 .items-list
-  @media (min-width: 768px)
+  @media (min-width: $tablet)
     display flex
   > * + *
     margin 20px 0 0
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       margin 35px 0 0
   &__title
     color $c-title
@@ -11,26 +11,26 @@
     text-align center
     text-transform uppercase
     width 100%
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       font-size 32px
-    @media (min-width: 1020px)  
+    @media (min-width: $desktop)
       font-size 18px
   &._top3
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       display block
-    @media (min-width: 1020px)  
+    @media (min-width: $desktop)
       > * + *
         margin 20px 0 0
       .items-list__title + .item-preview
         margin-top 10px    
   &._double
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       .item-preview
         width 349px
         & + .item-preview
           margin 0 0 0 30px
   &._triple
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       flex-wrap wrap
       justify-content space-between
       .item-preview
@@ -38,7 +38,7 @@
         width 349px
         &:nth-of-type(n+3)
           margin-top 30px
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       .item-preview
         width 300px
         &:nth-of-type(n+3)
@@ -46,7 +46,7 @@
         &:nth-of-type(n+4)         
           margin 30px 0 0
   &._list21
-    @media (min-width: 768px)
+    @media (min-width: $tablet)
       ._center
         margin 0 0 0 30px
         width 232px
@@ -54,7 +54,7 @@
           font-size 18px
         .item-preview__info
           padding-right 0
-    @media (min-width: 1020px)
+    @media (min-width: $desktop)
       ._center
         margin 0 0 0 30px
         width 300px
@@ -67,7 +67,7 @@
     .items-list__title
       text-transform none
       font-size 28px
-      @media (min-width: 1020px)
+      @media (min-width: $desktop)
         font-size 36px
                     
           
