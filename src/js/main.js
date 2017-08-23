@@ -14,4 +14,8 @@ $(document).ready(function() {
         });
         self.slick(slickConfig);
     });
+
+    $('.header__burger, .burger-menu__close, .burger-menu__overlay').on('click', function () {
+        $('body').toggleClass('burger-menu-opened');
+    });
 });

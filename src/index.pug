@@ -10,6 +10,19 @@ html
     link(rel='stylesheet', href='css/main.css')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
   body
+    .burger-menu
+       .burger-menu__overlay
+       ul.burger-menu__list
+        li.burger-menu__close
+            svg
+                use(xlink:href='i/icons.svg#burger_close')
+        li.burger-menu__item: a(href='#') О проекте
+        li.burger-menu__item: a(href='#') Мы рекомендуем
+        li.burger-menu__item: a(href='#') Рестораны
+        li.burger-menu__item: a(href='#') Бары
+        li.burger-menu__item: a(href='#') Про вино
+        li.burger-menu__item: a(href='#') Наши эксперты
+        li.burger-menu__item: a(href='#') Гастрофестивали
     header.header
         .header__wrapper
             .header-logo: h1 Spoon Guide Russia

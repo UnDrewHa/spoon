@@ -1,7 +1,14 @@
 .header
   background #fff
   @media (max-width: $desktop - 1)
+    position fixed
+    top 0
+    right 0
+    left 0
+    border-bottom 1px solid $c-lines
+    width 100%
     height 50px
+    z-index 1000
   &__wrapper
     @media (max-width: $desktop - 1)
       padding 8px 0

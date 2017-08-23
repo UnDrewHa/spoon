@@ -1,0 +1,92 @@
+.burger-menu
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  height 100%
+  pointer-events none
+  width 100%
+  z-index 2000
+  &__overlay
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    height 100%
+    width 100%
+    background #000
+    opacity 0
+    transition opacity .25s ease
+    z-index 1
+  &__close
+    position absolute
+    top: 24px
+    left: 2px
+    cursor pointer
+    display flex
+    justify-content center
+    align-items center
+    height 50px
+    width 50px
+    z-index 3
+    svg
+      display block
+      fill $c-title
+      height 14px
+      width 14px
+    &:hover
+      svg
+        fill $c-accent
+  &__list
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    background #fff
+    margin 0
+    padding 80px 20px 0
+    max-width 300px
+    transition transform .25s ease
+    transform translateX(-100%)
+    width 80%
+    z-index 2
+  &__item
+    border-bottom 1px solid $c-lines
+    height 50px
+    font bold 16px/49px $roboto-c
+    list-style-type none
+    margin 0
+    padding 0
+    text-transform uppercase
+    @media (min-width: $tablet)
+      height 70px
+      line-height 69px
+    a
+      color $c-title
+      display block
+      height 100%
+      &:hover
+        color $c-accent
+        
+.burger-menu-opened
+  .header__burger
+    &::before
+      top: 21px;
+      transform: rotate(45deg);
+      transition: transform .2s ease;
+    &::after
+      bottom: 21px;
+      transform: rotate(-45deg);
+      transition: transform .2s ease;
+    span
+      opacity: 0
+  .burger-menu
+    pointer-events auto
+    .burger-menu__overlay
+      opacity .8
+      transition opacity .5s ease
+    .burger-menu__list
+      transform none
+      transition transform .5s ease 
