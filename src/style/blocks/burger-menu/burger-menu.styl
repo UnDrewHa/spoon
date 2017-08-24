@@ -20,6 +20,21 @@
     opacity 0
     transition opacity .25s ease
     z-index 1
+  &__container
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    background #fff
+    height 100%
+    overflow hidden 
+    max-width 300px
+    padding 80px 0 0
+    transition transform .25s ease
+    transform translateX(-100%)
+    width 80%
+    z-index 2
+       
   &__close
     position absolute
     top: 24px
@@ -41,17 +56,22 @@
         fill $c-accent
   &__list
     position absolute
-    top 0
+    top 70px
     left 0
     bottom 0
+    right 0
     background #fff
+    height: 100%
+    overflow-y: auto
+    overflow-x: hidden
+    -webkit-overflow-scrolling: touch
     margin 0
-    padding 80px 20px 0
-    max-width 300px
-    transition transform .25s ease
-    transform translateX(-100%)
-    width 80%
+    padding 10px 20px 0
     z-index 2
+    &::after
+      content ''
+      display block
+      height 150px
   &__item
     border-bottom 1px solid $c-lines
     height 50px
@@ -87,6 +107,6 @@
     .burger-menu__overlay
       opacity .8
       transition opacity .5s ease
-    .burger-menu__list
+    .burger-menu__container
       transform none
       transition transform .5s ease 
