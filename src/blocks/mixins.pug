@@ -27,6 +27,19 @@ mixin expert(title)
     .item-preview__info
       a(href='#').item-preview__title= title
 
+mixin burger()
+  .burger-menu
+        .burger-menu__overlay
+        .burger-menu__container
+            .burger-menu__close
+            ul.burger-menu__list
+                li.burger-menu__item: a(href='#') О проекте
+                li.burger-menu__item: a(href='#') Мы рекомендуем
+                li.burger-menu__item: a(href='#') Рестораны
+                li.burger-menu__item: a(href='#') Бары
+                li.burger-menu__item: a(href='#') Про вино
+                li.burger-menu__item: a(href='#') Наши эксперты
+                li.burger-menu__item: a(href='#') Гастрофестивали
 
 mixin pagination()
   ul.pagination
